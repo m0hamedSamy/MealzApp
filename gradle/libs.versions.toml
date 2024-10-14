@@ -41,7 +41,6 @@ koin-bom = { group = "io.insert-koin", name = "koin-bom", version.ref = "koinBom
 koin-android = { group = "io.insert-koin", name = "koin-android" }
 koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compose" }
 koin-androidx-compose-navigation = { group = "io.insert-koin", name = "koin-androidx-compose-navigation" }
-koin-androidx-startup = { group = "io.insert-koin", name = "koin-androidx-startup" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
@@ -50,6 +49,7 @@ kotlinx-collections-immutable = { group = "org.jetbrains.kotlinx", name = "kotli
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "converterGson" }
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coilCompose" }
 coil-network-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coilCompose" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
@@ -61,7 +61,7 @@ room-compiler = { group = "androidx.room", name = "room-compiler", version.ref =
 koin = [ "koin-android", "koin-androidx-compose", "koin-androidx-compose-navigation" ]
 navigation = [ "androidx-navigation-compose", "kotlinx-serialization-json" ]
 coroutines = [ "kotlinx-coroutines-core", "kotlinx-coroutines-android" ]
-retrofit = [ "retrofit", "converter-gson", "okhttp" ]
+retrofit = [ "retrofit", "converter-gson", "okhttp", "okhttp-logging" ]
 coil = [ "coil-compose", "coil-network-okhttp" ]
 room = [ "room-runtime", "room-ktx", "room-paging" ]
 
