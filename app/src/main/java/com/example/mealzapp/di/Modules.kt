@@ -1,5 +1,10 @@
 package com.example.mealzapp.di
 
-val mealzModules = listOf(
-    appModule
-)
+import org.koin.dsl.module
+
+val mealzModules = module {
+    includes(
+        appModule,
+        mealCategoriesModule
+    )
+}
